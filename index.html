@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RADIX — Frontier Technology, AI & Deep Science Publication</title>
+    <meta
+      name="description"
+      content="An independent publication chronicling frontier breakthroughs in artificial intelligence, quantum systems, neurotechnology, and synthetic biology."
+    />
+    <meta name="author" content="RADIX Editorial" />
+    <meta name="keywords" content="technology, artificial intelligence, quantum computing, neurotechnology, synthetic biology, deep tech, space, science, longform" />
+    <meta name="theme-color" content="#0A0B0E" id="theme-color-meta" />
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RADIX — Frontier Technology, AI & Deep Science Publication" />
+    <meta
+      property="og:description"
+      content="An independent publication chronicling frontier breakthroughs in artificial intelligence, quantum systems, neurotechnology, and synthetic biology."
+    />
+    <meta property="og:site_name" content="RADIX Journal" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RADIX — Frontier Technology, AI & Deep Science Publication" />
+    <meta
+      name="twitter:description"
+      content="An independent publication chronicling frontier breakthroughs in artificial intelligence, quantum systems, neurotechnology, and synthetic biology."
+    />
+
+    <!-- Google Fonts: Space Grotesk (Modern Geometric Display), Plus Jakarta Sans (Body), JetBrains Mono (Specs) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Initial Theme Initialization Script -->
+    <script>
+      (function() {
+        try {
+          const stored = localStorage.getItem('radix-theme');
+          const isDark = stored ? stored === 'dark' : true;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-[#0A0B0E] dark:text-slate-100 transition-colors duration-200 antialiased font-sans selection:bg-blue-500 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "RADIX — Frontier Technology & Deep Science Publication",
+  "description": "An independent digital publication chronicling breakthroughs in neural interfaces, quantum systems, synthetic biology, and humanoid robotics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
